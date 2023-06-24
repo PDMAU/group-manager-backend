@@ -1,24 +1,26 @@
 package com.groupmanager.controller;
 
 import com.groupmanager.dto.CourseDto;
-import com.groupmanager.service.FindCoursesService;
+import com.groupmanager.service.interfaces.FindAllCourses;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-public class Controller {
+@RequestMapping("/courses")
+public class CoursesController {
 
-    private final FindCoursesService findCoursesService;
+    private final FindAllCourses findAllCourses;
 
-    @GetMapping("/list")
-    public ResponseEntity<?> list(){
-        List<CourseDto> courseDtos = findCoursesService.listAll();
-        return ResponseEntity.ok().body(courseDtos);
+    @GetMapping
+    public ResponseEntity<List<CourseDto>> list(){
+
+        return ResponseEntity.ok().body(findAllCourses.listAll());
     }
 
 }

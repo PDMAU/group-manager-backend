@@ -1,9 +1,9 @@
-package com.groupmanager.service;
+package com.groupmanager.service.interfaces;
 
 import com.groupmanager.dto.CourseDto;
 
 import java.util.List;
 
-public interface FindCoursesService {
+public interface FindAllCourses {
     List<CourseDto> listAll();
 }
