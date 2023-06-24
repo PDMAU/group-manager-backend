@@ -12,7 +12,7 @@
 	<artifactId>group-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>group-manager</name>
-	<description>Projeto para a faculdade</description>
+	<description>Projeto group-manager</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
