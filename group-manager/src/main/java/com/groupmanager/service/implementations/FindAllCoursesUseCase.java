@@ -4,7 +4,7 @@ import com.groupmanager.dto.CourseDto;
 import com.groupmanager.dto.OfferingDto;
 import com.groupmanager.infrastructure.database.mongo.entities.Course;
 import com.groupmanager.infrastructure.database.mongo.repository.CourseMongoRepository;
-import com.groupmanager.model.Offering;
+import com.groupmanager.infrastructure.database.mongo.entities.Offering;
 import com.groupmanager.service.interfaces.FindAllCourses;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

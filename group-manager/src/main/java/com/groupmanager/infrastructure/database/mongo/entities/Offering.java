@@ -1,4 +1,4 @@
-package com.groupmanager.model;
+package com.groupmanager.infrastructure.database.mongo.entities;
 
 import lombok.Data;
 
