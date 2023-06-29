@@ -1,8 +1,9 @@
 package com.groupmanager.enumeration;
 
 public enum Categories {
-    GAMES,
-    STUDIES,
-    COURSES,
-    SPORTS,
+    Festas,
+    Estudos,
+    Universidade,
+    Esportes,
+    Games,
 }

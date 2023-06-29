@@ -3,7 +3,6 @@ package com.groupmanager.service.implementations;
 import com.groupmanager.dto.GroupDto;
 import com.groupmanager.infrastructure.database.mongo.entities.Group;
 import com.groupmanager.infrastructure.database.mongo.repository.GroupMongoRepository;
-import com.groupmanager.service.interfaces.CreateGroup;
 import com.groupmanager.service.interfaces.FindAllGroups;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -27,9 +26,11 @@ public class FindAllGroupsUseCase implements FindAllGroups {
                 .category(group.getCategory())
                 .desc(group.getDesc())
                 .link(group.getLink())
-                .courseCode(group.getCourseCode())
+                .code(group.getCode())
                 .classRoom(group.getClassRoom())
                 .semester(group.getSemester())
+                .professor(group.getProfessor())
+                .groupType(group.getGroupType())
                 .build();
     }
 

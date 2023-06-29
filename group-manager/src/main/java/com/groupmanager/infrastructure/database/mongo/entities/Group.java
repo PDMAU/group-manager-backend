@@ -16,12 +16,14 @@ public class Group {
     @Id
     private ObjectId id;
     private String name;
-    private Categories category;
+    private String category;
     private String desc;
     private String link;
-    private String courseCode;
+    private String code;
     private String classRoom;
     private String semester;
+    private String professor;
+    private String groupType;
 
     public static Group from(GroupDto dto) {
         return Group.builder()
@@ -30,9 +32,11 @@ public class Group {
                 .category(dto.getCategory())
                 .desc(dto.getDesc())
                 .link(dto.getLink())
-                .courseCode(dto.getCourseCode())
+                .code(dto.getCode())
                 .classRoom(dto.getClassRoom())
                 .semester(dto.getSemester())
+                .professor(dto.getProfessor())
+                .groupType(dto.getGroupType().trim())
                 .build();
     }
 

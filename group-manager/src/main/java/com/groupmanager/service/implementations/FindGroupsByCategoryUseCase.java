@@ -27,9 +27,11 @@ public class FindGroupsByCategoryUseCase implements FindGroupsByCategory {
                 .category(group.getCategory())
                 .desc(group.getDesc())
                 .link(group.getLink())
-                .courseCode(group.getCourseCode())
+                .code(group.getCode())
                 .classRoom(group.getClassRoom())
                 .semester(group.getSemester())
+                .professor(group.getProfessor())
+                .groupType(group.getGroupType())
                 .build();
     }
 

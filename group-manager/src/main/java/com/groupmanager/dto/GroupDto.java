@@ -13,15 +13,21 @@ public class GroupDto {
 
     private String name;
 
-    private Categories category;
+    private String category;
 
     private String desc;
 
     private String link;
 
-    private String courseCode;
+    private String professor;
+
+    private String groupType;
+
+    private String code;
 
     private String classRoom;
 
     private String semester;
 }
+
+
